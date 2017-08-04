@@ -17,6 +17,9 @@ errors = require('./core/server/errors');
 utils = require('./core/server/utils');
 parentApp = express();
 
+parentApp.set('trust proxy', true);
+parentApp.use(require('./appengine'));
+
 debug('Initialising Ghost');
 ghost().then(function (ghostServer) {
     // Mount our Ghost instance on our desired subdirectory path if it exists.
