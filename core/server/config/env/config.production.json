@@ -1,11 +1,12 @@
 {
+    "url": "https://glod-www-dot-ghost-175523.appspot.com",
     "database": {
         "client": "mysql",
         "connection": {
-            "host"     : "127.0.0.1",
-            "user"     : "root",
-            "password" : "",
-            "database" : "ghost"
+            "host"     : "104.154.249.117",
+            "user"     : "glod_monkey",
+            "password" : "$wLp8KWzV@zV1z30",
+            "database" : "glod_ghost_www"
         }
     },
     "auth": {
@@ -13,6 +14,19 @@
     },
     "paths": {
         "contentPath": "content/"
+    },
+    "storage": {
+        "active": "gcloud",
+        "gcloud": {
+            "projectId": "ghost-175523",
+            "key": "ghost-e5484db4531a.json",
+            "bucket": "glod_oio"
+        }
+    },
+    "fileStorage": false,
+    "server": {
+      "host": "0.0.0.0",
+      "port": "8080"
     },
     "logging": {
         "level": "info",
